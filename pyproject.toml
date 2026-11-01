@@ -1,0 +1,12 @@
+[project]
+name = "reclaim-radar"
+version = "0.2.0"
+description = "Local PC hardware sourcing, valuation and review workspace for Windows"
+readme = "README.md"
+license = "AGPL-3.0-only"
+requires-python = ">=3.13"
+dependencies = ["fastapi", "uvicorn", "httpx", "beautifulsoup4", "playwright", "tzdata"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

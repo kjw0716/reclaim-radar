@@ -1,0 +1,4 @@
+BoPeng/ai-marketplace-monitor
+https://github.com/BoPeng/ai-marketplace-monitor
+Commit: 4d18385dc6337937dae4abcb2069033b16c4a95b
+AGPL-3.0; original archived here, adapted card parsing in radar/aimm_cards.py.
