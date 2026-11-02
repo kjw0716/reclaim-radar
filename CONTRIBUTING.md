@@ -22,3 +22,5 @@ Describe the problem, resulting behavior and checks in your pull request. Add me
 ## Release
 
 Update versions and `CHANGELOG.md`, run checks, refresh screenshots if necessary, then run `python scripts/package_release.py`. Review the resulting archive and publish it as a source release. Keep `LICENSE`, upstream attribution and GeoNames attribution. Runtime data and installed dependencies must never be included.
+
+Before pushing, review `git status`. Keep `.data/`, `.venv/`, `node_modules/`, `.env` and local test artifacts out of commits (they are ignored); keep lockfiles, screenshots, `LICENSE` and attribution, and never force-add ignored runtime directories.

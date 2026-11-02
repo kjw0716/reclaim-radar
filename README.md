@@ -1,14 +1,29 @@
+<div align="center">
+
+<img src="frontend/public/favicon.svg" alt="Reclaim Radar icon" width="88">
+
 # Reclaim Radar
 
-A local workspace for finding used desktop PCs and components on Facebook Marketplace, comparing resale estimates, and reviewing what to keep. Built with React, TypeScript, FastAPI and SQLite, with English and Simplified Chinese interfaces.
+**Find underpriced used PCs, GPUs and parts on Facebook Marketplace, see resale estimates with evidence, and decide what to flip, all on your own Windows PC.**
+
+[![Checks](https://img.shields.io/github/actions/workflow/status/kjw0716/reclaim-radar/ci.yml?style=flat-square&label=checks)](https://github.com/kjw0716/reclaim-radar/actions/workflows/ci.yml)
+[![License: AGPL-3.0](https://img.shields.io/github/license/kjw0716/reclaim-radar?style=flat-square)](LICENSE)
+[![Python 3.13+](https://img.shields.io/badge/Python-3.13%2B-3776AB?style=flat-square&logo=python&logoColor=white)](pyproject.toml)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](radar)
+[![React 19](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](frontend)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](frontend)
+[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=flat-square&logo=windows&logoColor=white)](#quick-start-windows)
+[![Stars](https://img.shields.io/github/stars/kjw0716/reclaim-radar?style=flat-square&color=yellow)](https://github.com/kjw0716/reclaim-radar/stargazers)
 
 **English** | [简体中文](README.zh-CN.md)
 
-Reclaim Radar runs on your Windows computer. You sign in through a dedicated browser profile, review the evidence, and make the decision. It does not message sellers, bid or buy automatically.
+<img src="docs/screenshots/listings-en.png" alt="English listing workspace">
 
-![English listing workspace](docs/screenshots/listings-en.png)
+<sub>Screenshots show fictional demo listings and illustrative prices, not live offers or verified market evidence. The original hardware artwork is included in this repository.</sub>
 
-*Screenshots show fictional demo listings and illustrative prices, not live offers or verified market evidence. The original hardware artwork is included in this repository.*
+</div>
+
+Built with React, TypeScript, FastAPI and SQLite, with English and Simplified Chinese interfaces. Reclaim Radar runs on your Windows computer. You sign in through a dedicated browser profile, review the evidence, and make the decision. It does not message sellers, bid or buy automatically.
 
 ## Contents
 
@@ -21,7 +36,6 @@ Reclaim Radar runs on your Windows computer. You sign in through a dedicated bro
 - [Estimates and daily jobs](#how-estimates-work)
 - [Data, backup and troubleshooting](#data-limits-and-recovery)
 - [Development](#development)
-- [Publish to GitHub](#sharing-the-project-on-github)
 
 ## What it does
 
@@ -347,15 +361,14 @@ third_party/aimm/      Upstream source and attribution
 .github/workflows/     Windows CI
 ```
 
-## Sharing the project on GitHub
-
-Publish the source from the repository root so GitHub displays this English `README.md`. The **简体中文** link opens `README.zh-CN.md`; its **English** link returns here. Standard Markdown links work without scripts or hosting.
-
-Review `git status` before uploading. Keep `.data/`, `.venv/`, `node_modules/`, `.env` and local test artifacts out of commits; these paths are already ignored. Keep lockfiles, screenshots, LICENSE and attribution. Do not force-add ignored runtime directories.
-
-Run `python scripts/package_release.py` for a source archive to share or attach to a GitHub release. Recipients extract it and follow Windows installation. It is not a standalone executable. The files do not assume a repository URL or a live deployment.
-
 ## License and acknowledgments
 
 [AGPL-3.0](LICENSE). The Marketplace card parser credits [BoPeng/ai-marketplace-monitor](https://github.com/BoPeng/ai-marketplace-monitor); pinned upstream source and license are in [third_party/aimm](third_party/aimm/UPSTREAM.txt). GeoNames city data uses CC BY 4.0; see [data attribution](radar/data/README.md). This independent project is not affiliated with Facebook, Meta or the price-source websites.
 
+---
+
+<div align="center">
+
+If Reclaim Radar helps you spot a good deal, a [star](https://github.com/kjw0716/reclaim-radar/stargazers) helps other flippers find it.
+
+</div>

@@ -1,14 +1,29 @@
+<div align="center">
+
+<img src="frontend/public/favicon.svg" alt="Reclaim Radar icon" width="88">
+
 # 回收雷达 · Reclaim Radar
 
-在本机查找 Facebook Marketplace 上的二手 PC 主机与内部零件，比较转售估价、查看来源证据，再由你决定保留或拒绝。基于 React、TypeScript、FastAPI 和 SQLite，提供可即时切换的中英文界面。
+**在本机查找 Facebook Marketplace 上被低估的二手 PC、显卡与配件，结合来源证据比较转售估价，由你决定是否入手。**
+
+[![Checks](https://img.shields.io/github/actions/workflow/status/kjw0716/reclaim-radar/ci.yml?style=flat-square&label=checks)](https://github.com/kjw0716/reclaim-radar/actions/workflows/ci.yml)
+[![License: AGPL-3.0](https://img.shields.io/github/license/kjw0716/reclaim-radar?style=flat-square)](LICENSE)
+[![Python 3.13+](https://img.shields.io/badge/Python-3.13%2B-3776AB?style=flat-square&logo=python&logoColor=white)](pyproject.toml)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](radar)
+[![React 19](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](frontend)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](frontend)
+[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=flat-square&logo=windows&logoColor=white)](#快速开始windows)
+[![Stars](https://img.shields.io/github/stars/kjw0716/reclaim-radar?style=flat-square&color=yellow)](https://github.com/kjw0716/reclaim-radar/stargazers)
 
 [English](README.md) | **简体中文**
 
-软件在 Windows 本地运行，通过项目专用浏览器登录 Facebook。不会自动联系卖家、出价或购买。
+<img src="docs/screenshots/listings-zh-CN.png" alt="中文商品审核界面">
 
-![中文商品审核界面](docs/screenshots/listings-zh-CN.png)
+<sub>截图使用虚构演示商品和示意价格，不代表真实在售商品或已核实成交；硬件插画随源码提供。</sub>
 
-*截图使用虚构演示商品和示意价格，不代表真实在售商品或已核实成交；硬件插画随源码提供。*
+</div>
+
+基于 React、TypeScript、FastAPI 和 SQLite，提供可即时切换的中英文界面。软件在 Windows 本地运行，通过项目专用浏览器登录 Facebook。不会自动联系卖家、出价或购买。
 
 ## 目录
 
@@ -21,7 +36,6 @@
 - [估价与每日任务](#估价与每日任务)
 - [数据、备份和故障处理](#数据与适用范围)
 - [开发与验证](#开发与验证)
-- [发布到 GitHub](#发布到-github)
 
 ## 主要功能
 
@@ -330,15 +344,14 @@ python scripts/package_release.py
 
 目录：`radar/` 后端，`frontend/` 网页与翻译，`scripts/` 安装与打包，`tests/` 测试，`docs/screenshots/` 演示截图，`third_party/` 上游出处。
 
-## 发布到 GitHub
-
-从项目根目录上传源码，GitHub 会默认展示英文 `README.md`。英文顶部 **简体中文** 打开 `README.zh-CN.md`，中文顶部 **English** 返回英文。普通 Markdown 链接即可切换，不依赖脚本或另行部署网站。
-
-上传前查看 `git status`，不要提交 `.data/`、`.venv/`、`node_modules/`、`.env` 和本地测试产物；这些路径已被忽略。保留锁文件、截图、LICENSE 与上游署名，不要强制添加运行数据。
-
-执行 `python scripts/package_release.py` 可生成源码包，直接分享或附加到 GitHub Release。接收者解压后按 Windows 安装流程使用。这不是无需环境的独立 EXE，项目文件没有假定仓库地址或上线域名。
-
 ## 许可证与署名
 
 [AGPL-3.0](LICENSE)。卡片解析适配自 [BoPeng/ai-marketplace-monitor](https://github.com/BoPeng/ai-marketplace-monitor)，固定源码和许可证在 [third_party/aimm](third_party/aimm/UPSTREAM.txt)。GeoNames 数据使用 CC BY 4.0，详见 [数据署名](radar/data/README.md)。项目与 Facebook、Meta 和价格来源网站没有隶属关系。
 
+---
+
+<div align="center">
+
+如果回收雷达帮你找到了好价，欢迎点个 [Star](https://github.com/kjw0716/reclaim-radar/stargazers)，让更多人发现它。
+
+</div>
